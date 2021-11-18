@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="msapplication-TileColor" content="#0E0E0E">
+    <meta name="theme-color" content="#0E0E0E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&amp;family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+    <link href="core.css" rel="stylesheet">
+    <script>
+      // prettier-ignore
+      ! function(e, n, o) {
+        function t(e, n) {
+          return typeof e === n
+        }
+
+        function s() {
+          return "function" != typeof n.createElement ? n.createElement(arguments[0]) : d ? n.createElementNS.call(n, "http://www.w3.org/2000/svg", arguments[0]) : n.createElement.apply(n, arguments)
+        }
+
+        function a() {
+          var e = n.body;
+          return e || ((e = s(d ? "svg" : "body")).fake = !0), e
+        }
+        var i = [],
+          r = [],
+          l = {
+            _version: "3.6.0",
+            _config: {
+              classPrefix: "",
+              enableClasses: !0,
+              enableJSClass: !0,
+              usePrefixes: !0
+            },
+            _q: [],
+            on: function(e, n) {
+              var o = this;
+              setTimeout(function() {
+                n(o[e])
+              }, 0)
+            },
+            addTest: function(e, n, o) {
+              r.push({
+                name: e,
+                fn: n,
+                options: o
+              })
+            },
+            addAsyncTest: function(e) {
+              r.push({
+                name: null,
+                fn: e
+              })
+            }
+          },
+          f = function() {};
+        f.prototype = l, f = new f;
+        var c = n.documentElement,
+          d = "svg" === c.nodeName.toLowerCase(),
+          p = l._config.usePrefixes ? " -webkit- -moz- -o- -ms- ".split(" ") : ["", ""];
+        l._prefixes = p;
+        var u = l.testStyles = function(e, o, t, i) {
+          var r, l, f, d, p = "modernizr",
+            u = s("div"),
+            h = a();
+          if (parseInt(t, 10))
+            for (; t--;)(f = s("div")).id = i ? i[t] : p + (t + 1), u.appendChild(f);
+          return (r = s("style")).type = "text/css", r.id = "s" + p, (h.fake ? h : u).appendChild(r), h.appendChild(u), r.styleSheet ? r.styleSheet.cssText = e : r.appendChild(n.createTextNode(e)), u.id = p, h.fake && (h.style.background = "", h.style.overflow = "hidden", d = c.style.overflow, c.style.overflow = "hidden", c.appendChild(h)), l = o(u, e), h.fake ? (h.parentNode.removeChild(h), c.style.overflow = d, c.offsetHeight) : u.parentNode.removeChild(u), !!l
+        };
+        f.addTest("touchevents", function() {
+            var o;
+            if ("ontouchstart" in e || e.DocumentTouch && n instanceof DocumentTouch) o = !0;
+            else {
+              var t = ["@media (", p.join("touch-enabled),("), "heartz", ")", "{#modernizr{top:9px;position:absolute}}"].join("");
+              u(t, function(e) {
+                o = 9 === e.offsetTop
+              })
+            }
+            return o
+          }),
+          function() {
+            var e, n, o, s, a, l;
+            for (var c in r)
+              if (r.hasOwnProperty(c)) {
+                if (e = [], (n = r[c]).name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases && n.options.aliases.length))
+                  for (o = 0; o < n.options.aliases.length; o++) e.push(n.options.aliases[o].toLowerCase());
+                for (s = t(n.fn, "function") ? n.fn() : n.fn, a = 0; a < e.length; a++) 1 === (l = e[a].split(".")).length ? f[l[0]] = s : (!f[l[0]] || f[l[0]] instanceof Boolean || (f[l[0]] = new Boolean(f[l[0]])), f[l[0]][l[1]] = s), i.push((s ? "" : "no-") + l.join("-"))
+              }
+          }(),
+          function(e) {
+            var n = c.className,
+              o = f._config.classPrefix || "";
+            if (d && (n = n.baseVal), f._config.enableJSClass) {
+              var t = new RegExp("(^|\\s)" + o + "no-js(\\s|$)");
+              n = n.replace(t, "$1" + o + "js$2")
+            }
+            f._config.enableClasses && (n += " " + o + e.join(" " + o), d ? c.className.baseVal = n : c.className = n)
+          }(i), delete l.addTest, delete l.addAsyncTest;
+        for (var h = 0; h < f._q.length; h++) f._q[h]();
+        e.Modernizr = f
+      }(window, document);
+    </script>
+    <title>index</title>
+  </head>
+
+  <body>
+    <link href="header.css" rel="stylesheet">
+    <header class="header">
+      <section class="address-section">
+        <div class="container">
+          <ul class="address-list list-reset">
+            <li class="address-item address-item__time hide_on_mobile">Tues-Fri 11am-8pm, Sat 9am-5pm</li>
+            <li class="address-item address-item__location">Arlington Heights, IL</li>
+            <li class="address-item address-item__phone hide_on_mobile">847-227-8404</li>
+            <li class="address-item address-item__location">Libertyville, IL</li>
+            <li class="address-item address-item__phone hide_on_mobile">847-686-3610</li>
+          </ul>
+        </div>
+      </section>
+      <div class="container">
+        <div class="menu-wrapper"><a class="logotype-link logotype-image" href="#">
+            <picture>
+              <picture><img src="" data-src="images/hgg-logo.png" alt="alt"></picture>
+            </picture>
+          </a><a class="btn contacts-link show_on_mobile_only" href="#">Contact us</a><a class="phone-button show_on_mobile_only" href="#"><span class="icon-phone-1"></span></a>
+          <nav class="main-menu">
+            <ul class="menu-list list-reset">
+              <li class="menu-item"><a class="menu-link link-reset" href="#">About us</a></li>
+              <li class="menu-item"><a class="menu-link link-reset" href="#">Classes</a></li>
+              <li class="menu-item"><a class="menu-link link-reset" href="#">Camps</a></li>
+              <li class="menu-item"><a class="menu-link link-reset" href="#">Birthday Party</a></li>
+              <li class="menu-item"><a class="menu-link link-reset" href="#">Team Building</a></li>
+              <li class="menu-item"><a class="menu-link link-reset" href="#">Reviews</a></li>
+              <li class="menu-item"><a class="menu-link link-reset" href="#">Blog</a></li>
+              <li class="menu-item"><a class="menu-link link-reset" href="#">Contact Us</a></li>
+              <li class="menu-item mobile-address-list show_on_mobile_only">
+                <ul class="address-list list-reset">
+                  <li class="address-item address-item__time">Tues-Fri 11am-8pm, Sat 9am-5pm</li>
+                  <li class="address-item address-item__location">Arlington Heights, IL</li>
+                  <li class="address-item address-item__phone">847-227-8404</li>
+                  <li class="address-item address-item__location">Libertyville, IL</li>
+                  <li class="address-item address-item__phone">847-686-3610</li>
+                </ul>
+              </li>
+              <li class="menu-item show_on_mobile_only">
+                <ul class="social-list list-reset show_on_mobile_only">
+                  <li class="social-item"><a class="social-icon social-icon__facebook" href=""></a></li>
+                  <li class="social-item"><a class="social-icon social-icon__youtube" href=""></a></li>
+                  <li class="social-item"><a class="social-icon social-icon__instagram" href=""></a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav><button class="burger-button show_on_mobile_only"><span class="icon-burger"></span></button>
+        </div>
+      </div>
+    </header>
+    <main class="root">
+      <link href="banner.css" rel="stylesheet">
+      <section class="banner">
+        <div class="container">
+          <div class="banner-wrapper">
+            <div class="banner-block">
+              <h2 class="banner-header">Obstacle Courses / Kids Birthday Parties / Private Team Building Events in Arlington Heights, IL</h2>
+              <p class="banner-text">Here at Hot Ground Gym® (HGG) we're revolutionizing the way kids stay active, learn, and grow. Our indoor obstacle courses and team-building challenges are designed to engage kids physically and mentally and to stimulate their character, in a super unique and fun environment.</p><a class="btn contacts-link" href="#">Contact us</a><a class="btn play-video-link open-popup" href="#open-popup">Watch the video</a>
+              <div class="award">
+                <div class="swiper">
+                  <ul class="swiper-wrapper awards-list list-reset">
+                    <li class="swiper-slide awards-item">
+                      <div class="awards-logo"><img src="" data-src="images/google.svg" alt="alt"></div>
+                    </li>
+                    <li class="swiper-slide awards-item">
+                      <div class="awards-logo">
+                        <picture><img src="" data-src="images/hulafrogs.png" alt="alt"></picture>
+                      </div>
+                    </li>
+                    <li class="swiper-slide awards-item">
+                      <div class="awards-logo"><img src="" data-src="images/yelp.svg" alt="alt"></div>
+                    </li>
+                    <li class="swiper-slide awards-item">
+                      <div class="awards-logo"><img src="" data-src="images/fb.svg" alt="alt"></div>
+                    </li>
+                    <li class="swiper-slide awards-item">
+                      <div class="awards-logo"><img src="" data-src="images/3pa.svg" alt="alt"></div>
+                    </li>
+                    <li class="swiper-slide awards-item">
+                      <div class="awards-logo"><img src="" data-src="images/5pc.svg" alt="alt"></div>
+                    </li>
+                  </ul>
+                  <div class="swiper-button-next awards-button-next"><span class="icon-arrow-alt"></span></div>
+                  <div class="swiper-button-prev awards-button-prev"><span class="icon-arrow-alt"></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-image">
+              <picture><img src="" data-src="images/banner.jpg" alt="alt"></picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <link href="company.css" rel="stylesheet">
+      <section class="company">
+        <div class="container">
+          <div class="company-wrapper">
+            <div class="columns-2">
+              <h2 class="company-header">Recreation Center for Kids near Chicago</h2>
+              <p class="company-caption__large">The military background of our veteran founders sparked the unique idea for Hot Ground Gym.</p>
+            </div>
+            <div class="columns-2">
+              <p class="company-caption">Our kids’ fitness approach is ideal for building physical and mental character while providing them with engaging indoor children’s activities that they’ll genuinely enjoy. Your kids will leave each session with strengthened problem-solving skills and help them build self-confidence. Our kids’ gym is perfect for families in Arlington Heights and nearby areas such as Palatine, Wheeling, and Buffalo Grove.</p><a class="company-link" href="">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <link href="slider.css" rel="stylesheet">
+      <section class="slider">
+        <div class="swiper slider-wrapper">
+          <div class="swiper-wrapper slider-list">
+            <div class="swiper-slide slider-item">
+              <picture><img src="" data-src="images/image4.jpg" alt="alt"></picture><a class="btn slider-btn open-popup" href="#open-popup">Play</a>
+            </div>
+            <div class="swiper-slide slider-item">
+              <picture><img src="" data-src="images/image4.jpg" alt="alt"></picture><a class="btn slider-btn open-popup" href="#open-popup">Play</a>
+            </div>
+            <div class="swiper-slide slider-item">
+              <picture><img src="" data-src="images/image4.jpg" alt="alt"></picture><a class="btn slider-btn open-popup" href="#open-popup">Play</a>
+            </div>
+            <div class="swiper-slide slider-item">
+              <picture><img src="" data-src="images/image4.jpg" alt="alt"></picture><a class="btn slider-btn open-popup" href="#open-popup">Play</a>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <p class="swiper-button-text">Next</p>
+          </div>
+          <div class="swiper-button-prev">
+            <p class="swiper-button-text">Previous</p>
+          </div>
+        </div>
+      </section>
+      <link href="popup.css" rel="stylesheet">
+      <div class="popup" id="popup">
+        <div class="popup-body">
+          <div class="close-popup icon-close"></div>
+          <h4 class="popup-header">Alternative music video</h4>
+          <div id="example-vue-module"></div>
+        </div>
+      </div>
+      <!--#example-vue-module-->
+    </main>
+    <link href="footer.css" rel="stylesheet">
+    <section class="footer"></section>
+    <script src="core.js"></script>
+  </body>
+
+</html>
